@@ -7,11 +7,10 @@ use Illuminate\Support\ServiceProvider;
 
 class HelloServiceProvider extends ServiceProvider
 {
-
     public function boot()
     {
         View::composer(
-            'hello.idex', function($view) {
+            'hello.index', function($view) {
                 $view->with('view_message', 'composer message!');
             }
         );
