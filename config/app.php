@@ -168,6 +168,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        // テキストにならって登録したサービスプロバイダ
+        App\Providers\HelloServiceProvider::class,
     ])->toArray(),
 
     /*
