@@ -8,5 +8,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::match(['get', 'post'], 'hello', [HelloController::class, 'index'])
-    ->middleware(HelloMiddleware::class);
+Route::match(['get', 'post'], 'hello', [HelloController::class, 'index']);
